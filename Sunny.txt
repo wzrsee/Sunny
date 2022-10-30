@@ -534,7 +534,7 @@
             box = {
                 enabled1 = true,
                 enabled = false,
-                outline = true,
+                outline = false,
                 healthbar = false,
                 color1 = Color3.fromRGB(255, 255, 255),
                 color2 = Color3.fromRGB(0, 0, 0),
@@ -3338,7 +3338,7 @@
         
         OtherGroupbox:AddToggle('WatermarkEnabled', {
             Text = 'Watermark',
-            Default = true,
+            Default = false,
             Tooltip = 'Watermark Enabled',
         })
         
@@ -3348,7 +3348,7 @@
         
         OtherGroupbox:AddToggle('KeybindFrameEnabled', {
             Text = 'Keybind Frame',
-            Default = true,
+            Default = false,
             Tooltip = 'Keybind Frame Enabled',
         })
         
@@ -3368,7 +3368,7 @@
         local MenuGroup = Tabs['UI Settings']:AddLeftGroupbox('Menu')
         
         MenuGroup:AddButton('Unload Cheat', function() Library:Unload() end)
-        MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'RightShift', NoUI = true, Text = 'Menu keybind' }) 
+        MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'RightControl', NoUI = true, Text = 'Menu keybind' }) 
         
         Library.ToggleKeybind = Options.MenuKeybind 
         ThemeManager:SetLibrary(Library)
