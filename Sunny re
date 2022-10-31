@@ -534,7 +534,7 @@
             box = {
                 enabled1 = true,
                 enabled = false,
-                outline = false,
+                outline = true,
                 healthbar = false,
                 color1 = Color3.fromRGB(255, 255, 255),
                 color2 = Color3.fromRGB(0, 0, 0),
@@ -3348,7 +3348,7 @@
         
         OtherGroupbox:AddToggle('KeybindFrameEnabled', {
             Text = 'Keybind Frame',
-            Default = false,
+            Default = true,
             Tooltip = 'Keybind Frame Enabled',
         })
         
